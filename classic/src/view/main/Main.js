@@ -81,11 +81,6 @@ Ext.define('ContactsApp.view.main.Main', {
         padding: '10',
         items: [{
             xtype: 'contactslist'
-        	}]
-        },
-        {
-        title: 'About',
-        iconCls: 'fa-info-circle',
-        html: 'contactslist xccxhcjhxjchjxhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhcxjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'
+        }]
     }]
 });
