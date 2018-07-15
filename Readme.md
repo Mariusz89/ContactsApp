@@ -13,9 +13,6 @@ Features:
 - saving data in the local storage of the browser
 - validation forms 
 
-Demo
-You can test application on the website: 
-
 Running 
 
 Clone the repository
