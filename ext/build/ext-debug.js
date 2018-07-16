@@ -24455,7 +24455,22 @@ Ext.ClassManager = (function(Class, alias, arraySlice, arrayFrom, global) {
                     for (i = 0; i < length; i++) {
                         args.push('a[' + i + ']');
                     }
-                    instantiator = instantiators[length] = new Function('c', 'a', 'return new c(' + args.join(',') + ')');
+                    
+                 var code =                
+                'try '+ 
+                '{ '+
+                '    return new c('+args.join(',')+'); '+
+                '} '+
+                ' catch (e) { '+
+                 '        console.log("Error while running getInstantiator. Args:"); '+
+                 '        console.log('+args.join(',')+'); '+
+                 '        console.log("class:"); '+
+                 '        console.log(c); '+
+                 '        console.trace(); '+
+                 '        throw e; '+
+                 '    }';
+                
+                this.instantiators[length] = new Function('c', 'a', code);
                     instantiator.name = "Ext.create" + length;
                 }
                 return instantiator;

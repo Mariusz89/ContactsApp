@@ -12,7 +12,7 @@ Ext.define('ContactsApp.view.main.Main', {
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
+        'Ext.container.Viewport',
         'ContactsApp.view.main.MainModel',
         'ContactsApp.view.main.MainController',
         'ContactsApp.view.contacts.List'

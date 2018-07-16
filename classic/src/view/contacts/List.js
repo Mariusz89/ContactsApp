@@ -8,7 +8,8 @@ Ext.define('ContactsApp.view.contacts.List', {
         'ContactsApp.view.contacts.ContactsController',
         'ContactsApp.view.contacts.ContactsModel',
         'ContactsApp.view.contacts.Form',
-        'Ext.selection.CheckboxModel'
+        'Ext.selection.CheckboxModel',
+        'Ext.grid.filters.Filters'
     ],
 
     viewModel: 'contacts',
