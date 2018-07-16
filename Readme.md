@@ -1,14 +1,10 @@
 # ContactsApp
 
-**Version 6.2.0**
+## **Version 6.2.0**
 
 Based on Ext JS6 framework
 
-**
-
- 
-
-**Features:**
+## **Features:**
 
 -  add contacts
 - edit contact
@@ -18,10 +14,13 @@ Based on Ext JS6 framework
 - saving data in the local storage of the browser
 - validation forms 
 
-**Demo**
-You can test application on the website: **http://xn--mariuszkosir-bib.pl/projekt19/**
+# **Demo**
 
-**Running** 
+You can test application on the website: 
+**http://xn--mariuszkosir-bib.pl/projekt19/**
+
+
+## **Running**
 
 Clone the repository
 
