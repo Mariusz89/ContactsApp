@@ -8,14 +8,12 @@ Ext.define('ContactsApp.view.contacts.Form1', {
         'Ext.data.validator.Email' 
     ],
     shadow: true,
-    cls: 'demo-solid-background',
     id: 'basicform',
     items: [
         {
             xtype: 'form',
             id: 'fieldset1',
             title: 'Personal Info',
-            instructions: 'Please enter the information above.',
             defaults: {
                 labelWidth: '35%'
             },
@@ -71,32 +69,14 @@ Ext.define('ContactsApp.view.contacts.Form1', {
             },
             items: [
                 {
-                    text: 'Disable fields',
+                    text: 'Save',
                     ui: 'action',
-                    scope: this,
-                    hasDisabled: false,
-                    handler: function (btn) {
-                                        var form = this.up('form').getForm();
-                                        if (form.isValid()) {
-                                            form.submit({
-                                                url: 'cutomer/feedback',
-                                                success: function () {
-
-                                                },
-                                                failure: function () {
-
-                                                }
-                                            });
-                                        } else {
-                                            Ext.Msg.alert('Error', 'Fix the errors in the form')
-                                        }
-                                    }
+                    handler: 'onSave'
                 },
                 {
                     text: 'Reset',
                     ui: 'action',
-                    listeners: {
-                     click: 'onReset'
+                    handler: 'onCancel'
 
                  }
                 }

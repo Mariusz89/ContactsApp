@@ -50,7 +50,7 @@ Ext.define('ContactsApp.view.contacts.List1', {
         },
 
     ],
-    dockedItems: [
+    items: [
         {
             xtype: 'toolbar',
             dock: 'top',
