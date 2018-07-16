@@ -16,7 +16,7 @@ Based on Ext JS6 framework
 
 # **Demo**
 
-You can test application on the website: 
+You can test application on my website: 
 **http://xn--mariuszkosir-bib.pl/projekt19/**
 
 
@@ -29,6 +29,7 @@ cd /path/to/folder
 Run the following command to install Ext JS framework:
 
 Download and unzip the Ext JS https://www.sencha.com/products/extjs/evaluate/
+
 cd ContactsApp
 
 Run sencha app watch and open http://localhost:1841/ in your browser
