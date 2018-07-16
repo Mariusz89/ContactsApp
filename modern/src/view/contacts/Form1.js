@@ -79,7 +79,6 @@ Ext.define('ContactsApp.view.contacts.Form1', {
                     handler: 'onCancel'
 
                  }
-                }
             ]
         }
     ]
