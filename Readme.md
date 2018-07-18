@@ -6,13 +6,14 @@ Based on Ext JS6 framework
 
 ## **Features:**
 
--  add contacts
+- add contacts
 - edit contact
 - delete contact
 - displaying current contacts
 - sort contacts
 - saving data in the local storage of the browser
-- validation forms 
+- validation forms
+- search by name, surname, email, phone number 
 
 # **Demo**
 
