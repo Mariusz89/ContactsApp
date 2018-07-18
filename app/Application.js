@@ -10,15 +10,6 @@ Ext.define('ContactsApp.Application', {
     
     launch: function () {  //The launch function is defined in Ext.app.Application. This function is called after the page is loaded. 
        
-    },
-
-    onAppUpdate: function () {
-        Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
-            function (choice) {
-                if (choice === 'yes') {
-                    window.location.reload();
-                }
-            }
-        );
     }
+    
 });

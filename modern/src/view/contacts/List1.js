@@ -7,7 +7,6 @@ Ext.define('ContactsApp.view.contacts.List1', {
         'ContactsApp.view.contacts.ContactsController',
         'ContactsApp.view.contacts.ContactsModel',
         'ContactsApp.view.contacts.Form1'
-
     ],
 
     viewModel: 'contacts',
@@ -16,7 +15,6 @@ Ext.define('ContactsApp.view.contacts.List1', {
     iconCls: 'fa fa-users',
 
     bind: {
-        title: '{title}',
         store: '{contacts}'
     },
 
@@ -47,33 +45,29 @@ Ext.define('ContactsApp.view.contacts.List1', {
             width: 250,
             dataIndex: 'notes',
             text: 'Notes'
-        },
-
+        }
     ],
     items: [
         {
             xtype: 'toolbar',
-            dock: 'top',
+            layout: {
+                type: 'hbox',
+                align: 'top',
+                pack: 'center'
+            },
             items: [
                 {
                     text: 'Add',
                     iconCls: 'fa fa-plus',
                     listeners: {
-                        click: 'onAddClick'
-                    }
-                },
-                {
-                    text: 'Edit',
-                    iconCls: 'fa fa-pencil',
-                    listeners: {
-                        click: 'onEditClick'
+                        tap: 'onAddClick'
                     }
                 },
                 {
                     text: 'Delete',
                     iconCls: 'fa fa-trash',
                     listeners: {
-                        click: 'onDeleteClick'
+                        tap: 'onDeleteClick'
                     }
                 }
             ]

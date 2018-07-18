@@ -18,7 +18,6 @@ Ext.define('ContactsApp.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
-
     defaults: {   
         tab: {
             iconAlign: 'top'
@@ -27,12 +26,17 @@ Ext.define('ContactsApp.view.main.Main', {
     },
 
     tabBarPosition: 'bottom',
+    pack: 'end',
 
     items: [
         {
             title: 'Contacts',
             iconCls: 'x-fa fa-users',
-            layout: 'fit',
+            layout: {
+                type: 'fit'
+            },
+            width: "100%",
+            align: 'stretch',
             items: [{
                 xtype: 'contactslist' //I added a component 'contactlist' inside the Form class
             }]

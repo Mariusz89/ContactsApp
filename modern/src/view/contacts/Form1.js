@@ -5,25 +5,24 @@ Ext.define('ContactsApp.view.contacts.Form1', {
         'Ext.form.FieldSet',
         'Ext.field.Number',
         'Ext.field.Email',
-        'Ext.data.validator.Email' 
+        'Ext.data.validator.Email'
     ],
+    layout: {
+        type : 'vbox'
+    },
     shadow: true,
     id: 'basicform',
+    width: '100%',
+    zIndex: '999',
     items: [
         {
-            xtype: 'form',
-            id: 'fieldset1',
-            title: 'Personal Info',
-            defaults: {
-                labelWidth: '35%'
-            },
+            xtype: 'fieldset',
+            title: 'Contacts Form', 
             items: [
                 {
                     xtype: 'textfield',
                     name: 'firstName',
-                    label: 'Name',
-                    placeHolder: 'Tom Roy',
-                    autoCapitalize: true,
+                    label: 'First Name',
                     required: true,
                     clearIcon: true
                 },
@@ -31,54 +30,66 @@ Ext.define('ContactsApp.view.contacts.Form1', {
                     xtype: 'textfield',
                     name : 'lastName',
                     label: 'Last Name',
+                    required: true,
                     clearIcon: true
                 },
                 {
                     xtype: 'textfield',
                     name : 'phone',
                     label: 'Phone',
+                    required: true,
                     minLength: 8,
                     maxLength: 16,
-                    regex: /^\d+$/,
                     clearIcon: true
                 },
                 {
                     xtype: 'emailfield',
+                    required: true,
                     name: 'email',
                     label: 'Email',
-                    placeHolder: 'me@sencha.com',
-                    regex: /^(")?(?:[^\."])(?:(?:[\.])?(?:[\w\-!#$%&'*+\/=?\^_`{|}~]))*\1@(\w[\-\w]*\.){1,5}([A-Za-z]){2,6}$/,
                     clearIcon: true
                 },
                 {
                     xtype: 'textareafield',
                     name: 'notes',
-                    label: 'Notes'
+                    label: 'Notes',
+                    clearIcon: true
                 }
             ]
         },
         {
             xtype: 'container',
+            layout: {
+                type: 'vbox',
+                align: 'center',
+            }, 
             defaults: {
                 xtype: 'button',
-                style: 'margin: 1em',
-                flex: 1
-            },
-            layout: {
-                type: 'hbox'
+                width: '30%',
+                margin: '10'
             },
             items: [
                 {
                     text: 'Save',
                     ui: 'action',
-                    handler: 'onSave'
+                    listeners: {
+                        tap: 'onSave'
+                    }
                 },
                 {
                     text: 'Reset',
                     ui: 'action',
-                    handler: 'onCancel'
-
-                 }
+                    listeners: {
+                        tap: 'onReset'
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    ui: 'action',
+                    listeners: {
+                        tap: 'onCancel'
+                    }
+                }
             ]
         }
     ]

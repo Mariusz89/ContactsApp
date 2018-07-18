@@ -36,7 +36,7 @@ Ext.define('ContactsApp.view.contacts.ContactsController', {
                         store.sync();
                     }
                 }
-            );
+            )
         }
     },
 

@@ -7,7 +7,7 @@ Ext.define('ContactsApp.view.contacts.List', {
         'Ext.window.Window',
         'ContactsApp.view.contacts.ContactsController',
         'ContactsApp.view.contacts.ContactsModel',
-        'ContactsApp.view.contacts.Form',
+        'ContactsApp.view.contacts.Form',  
         'Ext.selection.CheckboxModel',
         'Ext.grid.filters.Filters'
     ],
@@ -25,7 +25,6 @@ Ext.define('ContactsApp.view.contacts.List', {
     selModel: {
         selType: 'checkboxmodel'
     },
-
 
     columns: {
         items:[
@@ -49,8 +48,7 @@ Ext.define('ContactsApp.view.contacts.List', {
             {
                 width: 250,
                 dataIndex: 'email',
-                text: 'Email',
-                
+                text: 'Email',      
             },
             {
                 width: 250,

@@ -12,7 +12,7 @@ Ext.define('ContactsApp.model.Contact', {
         { name: 'lastName', type: 'string'},
         { name: 'phone', type: 'number' },
         { name: 'email', type: 'string' },
-        { name: 'notes', type: 'string' },
+        { name: 'notes', type: 'string' }
     ],
 
     proxy: {
