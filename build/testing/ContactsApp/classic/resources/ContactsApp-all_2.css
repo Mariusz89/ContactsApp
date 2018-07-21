@@ -1,3 +1,442 @@
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:462 */
+.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed.x-title-icon-left {
+    width: 24px;
+    padding-right: 8px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:474 */
+.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-icon-light-framed {
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:480 */
+.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-glyph {
+    color: #f0f0f0;
+    font-size: 16px;
+    line-height: 16px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:497 */
+.x-ie8 .x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-glyph {
+    color: #f0f0f0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:507 */
+.x-panel-body-light-framed {
+    background: #fff;
+    border-color: #d0d0d0;
+    color: #404040;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-panel-light-framed {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 0 0 0;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-panel-light-framed-mc {
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-panel-light-framed {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-panel-light-framed-frameInfo {
+    font-family: dh-2-2-2-2-2-2-2-2-0px-0px-0px-0px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-panel-light-framed-tl {
+    background-position: 0 -4px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-panel-light-framed-tr {
+    background-position: right -6px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-panel-light-framed-bl {
+    background-position: 0 -8px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-panel-light-framed-br {
+    background-position: right -10px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-panel-light-framed-ml {
+    background-position: 0 top;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-panel-light-framed-mr {
+    background-position: right top;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-panel-light-framed-tc {
+    background-position: 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-panel-light-framed-bc {
+    background-position: 0 -2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-panel-light-framed-tr,
+.x-panel-light-framed-br,
+.x-panel-light-framed-mr {
+    padding-right: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-panel-light-framed-tl,
+.x-panel-light-framed-bl,
+.x-panel-light-framed-ml {
+    padding-left: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-panel-light-framed-tc {
+    height: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-panel-light-framed-bc {
+    height: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-panel-light-framed-tl,
+.x-panel-light-framed-bl,
+.x-panel-light-framed-tr,
+.x-panel-light-framed-br,
+.x-panel-light-framed-tc,
+.x-panel-light-framed-bc,
+.x-panel-light-framed-ml,
+.x-panel-light-framed-mr {
+    background-image: url(images/panel/panel-light-framed-corners.gif);
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-panel-light-framed-ml,
+.x-panel-light-framed-mr {
+    background-image: url(images/panel/panel-light-framed-sides.gif);
+    background-repeat: repeat-y;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-panel-light-framed-mc {
+    padding: 0px 0px 0px 0px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-panel-header-light-framed-top {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 14px 10px 14px;
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-panel-header-light-framed-top-mc {
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-panel-header-light-framed-top {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-panel-header-light-framed-top-frameInfo {
+    font-family: dh-2-2-0-2-2-2-0-2-10-14-10-14;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-panel-header-light-framed-top-tl {
+    background-position: 0 -4px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-panel-header-light-framed-top-tr {
+    background-position: right -6px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-panel-header-light-framed-top-bl {
+    background-position: 0 -8px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-panel-header-light-framed-top-br {
+    background-position: right -10px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-panel-header-light-framed-top-ml {
+    background-position: 0 top;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-panel-header-light-framed-top-mr {
+    background-position: right top;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-panel-header-light-framed-top-tc {
+    background-position: 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-panel-header-light-framed-top-bc {
+    background-position: 0 -2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-panel-header-light-framed-top-tr,
+.x-panel-header-light-framed-top-br,
+.x-panel-header-light-framed-top-mr {
+    padding-right: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-panel-header-light-framed-top-tl,
+.x-panel-header-light-framed-top-bl,
+.x-panel-header-light-framed-top-ml {
+    padding-left: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-panel-header-light-framed-top-tc {
+    height: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-panel-header-light-framed-top-bc {
+    height: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-panel-header-light-framed-top-tl,
+.x-panel-header-light-framed-top-bl,
+.x-panel-header-light-framed-top-tr,
+.x-panel-header-light-framed-top-br,
+.x-panel-header-light-framed-top-tc,
+.x-panel-header-light-framed-top-bc,
+.x-panel-header-light-framed-top-ml,
+.x-panel-header-light-framed-top-mr {
+    background-image: url(images/panel-header/panel-header-light-framed-top-corners.gif);
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-panel-header-light-framed-top-ml,
+.x-panel-header-light-framed-top-mr {
+    background-image: url(images/panel-header/panel-header-light-framed-top-sides.gif);
+    background-repeat: repeat-y;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-panel-header-light-framed-top-mc {
+    padding: 10px 14px 10px 14px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-panel-header-light-framed-right {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 14px 10px 14px 10px;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-panel-header-light-framed-right-mc {
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-panel-header-light-framed-right {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-panel-header-light-framed-right-frameInfo {
+    font-family: dh-2-2-2-0-2-2-2-0-14-10-14-10;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-panel-header-light-framed-right-tl {
+    background-position: 0 -4px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-panel-header-light-framed-right-tr {
+    background-position: right -6px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-panel-header-light-framed-right-bl {
+    background-position: 0 -8px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-panel-header-light-framed-right-br {
+    background-position: right -10px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-panel-header-light-framed-right-ml {
+    background-position: right 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-panel-header-light-framed-right-mr {
+    background-position: right 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-panel-header-light-framed-right-tc {
+    background-position: 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-panel-header-light-framed-right-bc {
+    background-position: 0 -2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-panel-header-light-framed-right-tr,
+.x-panel-header-light-framed-right-br,
+.x-panel-header-light-framed-right-mr {
+    padding-right: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-panel-header-light-framed-right-tl,
+.x-panel-header-light-framed-right-bl,
+.x-panel-header-light-framed-right-ml {
+    padding-left: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-panel-header-light-framed-right-tc {
+    height: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-panel-header-light-framed-right-bc {
+    height: 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-panel-header-light-framed-right-tl,
+.x-panel-header-light-framed-right-bl,
+.x-panel-header-light-framed-right-tr,
+.x-panel-header-light-framed-right-br,
+.x-panel-header-light-framed-right-tc,
+.x-panel-header-light-framed-right-bc,
+.x-panel-header-light-framed-right-ml,
+.x-panel-header-light-framed-right-mr {
+    background-image: url(images/panel-header/panel-header-light-framed-right-corners.gif);
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-panel-header-light-framed-right-ml,
+.x-panel-header-light-framed-right-mr {
+    background-image: url(images/panel-header/panel-header-light-framed-right-sides.gif);
+    background-repeat: repeat-y;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-panel-header-light-framed-right-mc {
+    padding: 14px 10px 14px 10px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-panel-header-light-framed-bottom {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 14px 10px 14px;
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-panel-header-light-framed-bottom-mc {
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-panel-header-light-framed-bottom {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-panel-header-light-framed-bottom-frameInfo {
+    font-family: dh-0-2-2-2-0-2-2-2-10-14-10-14;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-panel-header-light-framed-bottom-tl {
+    background-position: 0 -4px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-panel-header-light-framed-bottom-tr {
+    background-position: right -6px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-panel-header-light-framed-bottom-bl {
+    background-position: 0 -8px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-panel-header-light-framed-bottom-br {
+    background-position: right -10px;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-panel-header-light-framed-bottom-ml {
+    background-position: 0 bottom;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-panel-header-light-framed-bottom-mr {
+    background-position: right bottom;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-panel-header-light-framed-bottom-tc {
+    background-position: 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-panel-header-light-framed-bottom-bc {
+    background-position: 0 -2px;
+}
 /* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
 .x-panel-header-light-framed-bottom-tr,
 .x-panel-header-light-framed-bottom-br,

@@ -1,11 +1,11 @@
-Ext.define('ContactsApp.view.contacts.Form1', {
+Ext.define('ContactsApp.view.contacts.FormMobile', {
     extend: 'Ext.form.Panel',
     xtype: 'contactsform',
+    reference: 'form',
     requires: [
         'Ext.form.FieldSet',
         'Ext.field.Number',
-        'Ext.field.Email',
-        'Ext.data.validator.Email'
+        'Ext.field.Email'
     ],
     layout: {
         type : 'vbox'
@@ -38,8 +38,6 @@ Ext.define('ContactsApp.view.contacts.Form1', {
                     name : 'phone',
                     label: 'Phone',
                     required: true,
-                    minLength: 8,
-                    maxLength: 16,
                     clearIcon: true
                 },
                 {
@@ -73,14 +71,14 @@ Ext.define('ContactsApp.view.contacts.Form1', {
                     text: 'Save',
                     ui: 'action',
                     listeners: {
-                        tap: 'onSave'
+                        tap: 'validationAndSaveMobile'
                     }
                 },
                 {
                     text: 'Reset',
                     ui: 'action',
                     listeners: {
-                        tap: 'onReset'
+                        tap: 'onResetMobile'
                     }
                 },
                 {

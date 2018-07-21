@@ -1,4 +1,4 @@
-Ext.define('ContactsApp.view.contacts.List1', {
+Ext.define('ContactsApp.view.contacts.ListMobile', {
     extend: 'Ext.grid.Grid',
 
     xtype: 'contactslist',
@@ -6,12 +6,11 @@ Ext.define('ContactsApp.view.contacts.List1', {
     requires: [
         'ContactsApp.view.contacts.ContactsController',
         'ContactsApp.view.contacts.ContactsModel',
-        'ContactsApp.view.contacts.Form1'
+        'ContactsApp.view.contacts.FormMobile'
     ],
 
     viewModel: 'contacts',
     controller: 'contacts',
-
     iconCls: 'fa fa-users',
 
     bind: {
@@ -22,6 +21,7 @@ Ext.define('ContactsApp.view.contacts.List1', {
         {
             width: 200,
             dataIndex: 'firstName',
+            allowBlank: true,
             flex: 1,
             text: 'First Name'        
         },
@@ -60,7 +60,14 @@ Ext.define('ContactsApp.view.contacts.List1', {
                     text: 'Add',
                     iconCls: 'fa fa-plus',
                     listeners: {
-                        tap: 'onAddClick'
+                        tap: 'onAddClickMobile'
+                    }
+                },
+                {
+                    text: 'Edit',
+                    iconCls: 'fa fa-plus',
+                    listeners: {
+                        tap: 'onEditClickMobile'
                     }
                 },
                 {

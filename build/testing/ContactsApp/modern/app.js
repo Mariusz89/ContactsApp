@@ -42421,30 +42421,15 @@ Ext.define('Ext.tab.Panel', {extend:Ext.Container, xtype:'tabpanel', alternateCl
   this.callParent(arguments);
 }});
 Ext.define('ContactsApp.Application', {extend:Ext.app.Application, name:'ContactsApp', launch:function() {
-}, onAppUpdate:function() {
-  Ext.Msg.confirm('Application Update', 'This application has an update, reload?', function(choice) {
-    if (choice === 'yes') {
-      window.location.reload();
-    }
-  });
 }});
-Ext.define('ContactsApp.model.Contact', {extend:Ext.data.Model, entityName:'Contact', fields:[{name:'firstName', type:'string'}, {name:'lastName', type:'string'}, {name:'phone', type:'number'}, {name:'email', type:'string'}, {name:'notes', type:'string'}], proxy:{type:'localstorage', id:'contacts'}});
+Ext.define('ContactsApp.model.Contact', {extend:Ext.data.Model, entityName:'Contact', fields:[{name:'firstName', type:'string'}, {name:'lastName', type:'string'}, {name:'phone', type:'number'}, {name:'email', type:'string'}, {name:'notes', type:'string'}], proxy:{type:'localstorage', id:'contacts'}, validations:[{type:'presence', field:'firstName', allowEmpty:true, message:'First name can not be blank.'}, {type:'presence', allowEmpty:true, field:'lastName', message:'Last Name can not be blank.'}, 
+{type:'format', field:'phone', min:8, max:16, matcher:/^[0-9]{8,17}$/, message:'Phone is not in valid range.'}, {type:'format', field:'email', matcher:/^(")?(?:[^\."])(?:(?:[\.])?(?:[\w\-!#$%&'*+\/=?\^_`{|}~]))*\1@(\w[\-\w]*\.){1,5}([A-Za-z]){2,6}$/, message:'Email wrong format.'}]});
 Ext.define('ContactsApp.view.contacts.ContactsController', {extend:Ext.app.ViewController, alias:'controller.contacts', onAddClick:function(button, e, options) {
   this.createDialog();
 }, onEditClick:function(button, e, options) {
   var me = this, records = me.getRecordsSelected();
   if (records[0]) {
     me.createDialog(records[0]);
-  }
-}, onDeleteClick:function(button, e, options) {
-  var me = this, records = me.getRecordsSelected(), store = me.getView().getStore();
-  if (records[0]) {
-    Ext.Msg.confirm('Delete contact', 'Are you sure want to delete this contact?', function(choice) {
-      if (choice === 'yes') {
-        store.remove(records);
-        store.sync();
-      }
-    });
   }
 }, createDialog:function(record) {
   var me = this, view = me.getView();
@@ -42454,11 +42439,6 @@ Ext.define('ContactsApp.view.contacts.ContactsController', {extend:Ext.app.ViewC
     me.dialog.down('form').loadRecord(record);
   }
   me.dialog.show();
-}, getRecordsSelected:function() {
-  return this.getView().getSelection();
-}, onCancel:function(button, e, options) {
-  var me = this;
-  me.dialog = Ext.destroy(me.dialog);
 }, onSave:function(button, e, options) {
   var me = this, form = me.dialog.down('form'), isEdit = me.isEdit, record = form.getRecord(), values = form.getValues(), store = me.getView().getStore();
   if (form.isValid()) {
@@ -42475,26 +42455,65 @@ Ext.define('ContactsApp.view.contacts.ContactsController', {extend:Ext.app.ViewC
     }
   }
   store.sync();
+  console.log(store);
 }, onReset:function() {
   var me = this;
   me.dialog.down('form').reset();
+}, onAddClickMobile:function(button, e, options) {
+  this.createDialogMobile();
+}, onEditClickMobile:function(button, e, options) {
+  var me = this, records = me.getRecordsSelected();
+  if (records) {
+    me.createDialogMobile(records);
+  }
+}, createDialogMobile:function(record) {
+  var me = this, view = me.getView();
+  me.isEdit = !!record;
+  me.dialog = view.add({xtype:'contactsform'});
+  if (record) {
+    Ext.ComponentQuery.query('contactsform')[0].setRecord(record);
+  }
+  me.dialog.show();
+}, onSaveMobile:function(button, e, options) {
+  var me = this, form = Ext.ComponentQuery.query('contactsform')[0], isEdit = me.isEdit, record = form.getRecord(), values = form.getValues(), store = me.getView().getStore();
+  if (form.isValid()) {
+    if (isEdit) {
+      record.set(values);
+      me.onCancel();
+    } else {
+      record = Ext.create('ContactsApp.model.Contact');
+      record.set(values);
+      store.add(record);
+      Ext.Msg.alert('Message', 'Contact has been saved successfully!');
+      me.onCancel();
+    }
+  }
+  store.sync();
+}, onResetMobile:function() {
+  var me = this;
+  Ext.ComponentQuery.query('contactsform')[0].reset();
+}, onDeleteClick:function(button, e, options) {
+  var me = this, records = me.getRecordsSelected(), store = me.getView().getStore();
+  if (records) {
+    Ext.Msg.confirm('Delete contact', 'Are you sure want to delete this contact?', function(choice) {
+      if (choice === 'yes') {
+        store.remove(records);
+        store.sync();
+      }
+    });
+  }
+}, getRecordsSelected:function() {
+  return this.getView().getSelection();
+}, onCancel:function(button, e, options) {
+  var me = this;
+  me.dialog = Ext.destroy(me.dialog);
 }});
 Ext.define('ContactsApp.view.contacts.ContactsModel', {extend:Ext.app.ViewModel, alias:'viewmodel.contacts', stores:{contacts:{model:'ContactsApp.model.Contact', autoLoad:true}}, data:{title:'Contacts List'}});
 Ext.define('ContactsApp.view.main.MainController', {extend:Ext.app.ViewController, alias:'controller.main'});
 Ext.define('ContactsApp.view.main.MainModel', {extend:Ext.app.ViewModel, alias:'viewmodel.main', data:{name:'Contacts App'}});
-Ext.define('ContactsApp.view.contacts.Form1', {extend:Ext.form.Panel, xtype:'contactsform', shadow:true, cls:'demo-solid-background', id:'basicform', items:[{xtype:'form', id:'fieldset1', title:'Personal Info', instructions:'Please enter the information above.', defaults:{labelWidth:'35%'}, items:[{xtype:'textfield', name:'firstName', label:'Name', placeHolder:'Tom Roy', autoCapitalize:true, required:true, clearIcon:true}, {xtype:'textfield', name:'lastName', label:'Last Name', clearIcon:true}, {xtype:'textfield', 
-name:'phone', label:'Phone', minLength:8, maxLength:16, regex:/^\d+$/, clearIcon:true}, {xtype:'emailfield', name:'email', label:'Email', placeHolder:'me@sencha.com', regex:/^(")?(?:[^\."])(?:(?:[\.])?(?:[\w\-!#$%&'*+\/=?\^_`{|}~]))*\1@(\w[\-\w]*\.){1,5}([A-Za-z]){2,6}$/, clearIcon:true}, {xtype:'textareafield', name:'notes', label:'Notes'}]}, {xtype:'container', defaults:{xtype:'button', style:'margin: 1em', flex:1}, layout:{type:'hbox'}, items:[{text:'Disable fields', ui:'action', scope:this, hasDisabled:false, 
-handler:function(btn) {
-  var form = this.up('form').getForm();
-  if (form.isValid()) {
-    form.submit({url:'cutomer/feedback', success:function() {
-    }, failure:function() {
-    }});
-  } else {
-    Ext.Msg.alert('Error', 'Fix the errors in the form');
-  }
-}}, {text:'Reset', ui:'action', listeners:{click:'onReset'}}]}]});
-Ext.define('ContactsApp.view.contacts.List1', {extend:Ext.grid.Grid, xtype:'contactslist', viewModel:'contacts', controller:'contacts', iconCls:'fa fa-users', bind:{title:'{title}', store:'{contacts}'}, columns:[{width:200, dataIndex:'firstName', flex:1, text:'First Name'}, {width:200, dataIndex:'lastName', flex:1, text:'Last Name'}, {width:200, dataIndex:'phone', text:'Phone'}, {width:250, dataIndex:'email', text:'Email'}, {width:250, dataIndex:'notes', text:'Notes'}], dockedItems:[{xtype:'toolbar', 
-dock:'top', items:[{text:'Add', iconCls:'fa fa-plus', listeners:{click:'onAddClick'}}, {text:'Edit', iconCls:'fa fa-pencil', listeners:{click:'onEditClick'}}, {text:'Delete', iconCls:'fa fa-trash', listeners:{click:'onDeleteClick'}}]}]});
-Ext.define('ContactsApp.view.main.Main', {extend:Ext.tab.Panel, xtype:'app-main', controller:'main', viewModel:'main', defaults:{tab:{iconAlign:'top'}, styleHtmlContent:true}, tabBarPosition:'bottom', items:[{title:'Contacts', iconCls:'x-fa fa-users', layout:'fit', items:[{xtype:'contactslist'}]}]});
+Ext.define('ContactsApp.view.contacts.FormMobile', {extend:Ext.form.Panel, xtype:'contactsform', reference:'form', layout:{type:'vbox'}, shadow:true, id:'basicform', width:'100%', zIndex:'999', items:[{xtype:'fieldset', title:'Contacts Form', items:[{xtype:'textfield', name:'firstName', label:'First Name', required:true, clearIcon:true}, {xtype:'textfield', name:'lastName', label:'Last Name', required:true, clearIcon:true}, {xtype:'textfield', name:'phone', label:'Phone', required:true, clearIcon:true}, 
+{xtype:'emailfield', required:true, name:'email', label:'Email', clearIcon:true}, {xtype:'textareafield', name:'notes', label:'Notes', clearIcon:true}]}, {xtype:'container', layout:{type:'vbox', align:'center'}, defaults:{xtype:'button', width:'30%', margin:'10'}, items:[{text:'Save', ui:'action', listeners:{tap:'onSaveMobile'}}, {text:'Reset', ui:'action', listeners:{tap:'onResetMobile'}}, {text:'Cancel', ui:'action', listeners:{tap:'onCancel'}}]}]});
+Ext.define('ContactsApp.view.contacts.ListMobile', {extend:Ext.grid.Grid, xtype:'contactslist', viewModel:'contacts', controller:'contacts', iconCls:'fa fa-users', bind:{store:'{contacts}'}, columns:[{width:200, dataIndex:'firstName', flex:1, text:'First Name'}, {width:200, dataIndex:'lastName', flex:1, text:'Last Name'}, {width:200, dataIndex:'phone', text:'Phone'}, {width:250, dataIndex:'email', text:'Email'}, {width:250, dataIndex:'notes', text:'Notes'}], items:[{xtype:'toolbar', layout:{type:'hbox', 
+align:'top', pack:'center'}, items:[{text:'Add', iconCls:'fa fa-plus', listeners:{tap:'onAddClickMobile'}}, {text:'Edit', iconCls:'fa fa-plus', listeners:{tap:'onEditClickMobile'}}, {text:'Delete', iconCls:'fa fa-trash', listeners:{tap:'onDeleteClick'}}]}]});
+Ext.define('ContactsApp.view.main.Main', {extend:Ext.tab.Panel, xtype:'app-main', controller:'main', viewModel:'main', defaults:{tab:{iconAlign:'top'}, styleHtmlContent:true}, tabBarPosition:'bottom', pack:'end', items:[{title:'Contacts', iconCls:'x-fa fa-users', layout:{type:'fit'}, width:'100%', align:'stretch', items:[{xtype:'contactslist'}]}]});
 Ext.application({name:'ContactsApp', extend:ContactsApp.Application, mainView:'ContactsApp.view.main.Main'});

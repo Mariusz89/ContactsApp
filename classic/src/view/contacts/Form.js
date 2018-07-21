@@ -1,14 +1,13 @@
 Ext.define('ContactsApp.view.contacts.Form', {  //Ext.define is a method call of the Ext singleton class
     extend: 'Ext.window.Window',      // The form class will inherit the behavior from the Window class
     xtype: 'contactsform',       //The xtype class is a shorter name that can be used to instantiate the class instead of using its full name.
-
     requires: [
         'Ext.layout.container.Fit',
         'Ext.layout.container.HBox',
         'Ext.form.Panel',
         'Ext.form.field.Text'
     ],
-
+    id:  'basic',
     layout: 'fit',  //The fit layout is used when the parent container Form has only one child, and this child will occupy all the available space of the parent container.
     width: 350,
     closable: false,  //Hide the X 'close' icon
@@ -24,7 +23,6 @@ Ext.define('ContactsApp.view.contacts.Form', {  //Ext.define is a method call of
             padding: '5 5 0 5',  
             border: false,
             style: 'background-color: #fff;',
-
             fieldDefaults: {
                 anchor: '100%',  // Everything fields will occupy all the horizontal available space of the body of the form
                 labelAlign: 'left',
@@ -85,7 +83,7 @@ Ext.define('ContactsApp.view.contacts.Form', {  //Ext.define is a method call of
                     text: 'Save',
                     iconCls: 'fa fa-floppy-o', //We are setting iconCls to the Form window
                     listeners: {
-                        click: 'onSave'
+                        click: 'validationAndSave'
                     }
                 },
                 {

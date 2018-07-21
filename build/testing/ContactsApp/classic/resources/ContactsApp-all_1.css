@@ -3652,6 +3652,104 @@ div.x-form-text-grow .x-form-textarea {
     outline: 1px dashed #5fa2dd!important;
     outline-offset: -1px;
 }
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:1 */
+.x-datepicker {
+    position: relative;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:4 */
+.x-datepicker .x-monthpicker {
+    left: 0;
+    top: 0;
+    display: block;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:10 */
+.x-datepicker .x-monthpicker-months,
+.x-datepicker .x-monthpicker-years {
+    height: 100%;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:16 */
+.x-datepicker-inner {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:22 */
+.x-datepicker-cell {
+    padding: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:26 */
+.x-datepicker-header {
+    position: relative;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:30 */
+.x-datepicker-arrow {
+    position: absolute;
+    outline: none;
+    font-size: 0;
+    display: table;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:37 */
+.x-datepicker-arrow:before {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:45 */
+.x-datepicker-column-header {
+    padding: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:49 */
+.x-datepicker-date {
+    display: block;
+    text-decoration: none;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:54 */
+.x-monthpicker {
+    display: table;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:57 */
+.x-monthpicker-body {
+    height: 100%;
+    position: relative;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:62 */
+.x-monthpicker-months,
+.x-monthpicker-years {
+    float: left;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:67 */
+.x-monthpicker-item {
+    float: left;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:71 */
+.x-monthpicker-item-inner {
+    display: block;
+    text-decoration: none;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:76 */
+.x-monthpicker-yearnav-button-ct {
+    float: left;
+    text-align: center;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:81 */
+.x-monthpicker-yearnav-button {
+    display: inline-block;
+    outline: none;
+    font-size: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:87 */
+.x-monthpicker-buttons {
+    width: 100%;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:91 */
+.x-datepicker .x-monthpicker-buttons {
+    position: absolute;
+    bottom: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-base/sass/src/picker/Date.scss:96 */
+.x-datepicker-month .x-btn-split > .x-btn-button:after {
+    content: none;
+}
 /* C:/ContactsApp1/ext/classic/theme-base/sass/src/tip/Tip.scss:1 */
 .x-tip {
     position: absolute;
@@ -10587,6 +10685,363 @@ body > .x-mask {
 .x-message-box-error:before {
     content: "\f057";
 }
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:71 */
+.x-form-trigger-spinner-default {
+    width: 32px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:79 */
+.x-form-trigger-spinner-default:before {
+    content: '';
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:85 */
+.x-form-spinner-default {
+    background-color: #fff;
+    width: 32px;
+    height: 15px;
+    color: #919191;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:131 */
+.x-form-spinner-up-default {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-form-spinner-up-default:before {
+    content: "\f0d8";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:137 */
+.x-form-spinner-down-default {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-form-spinner-down-default:before {
+    content: "\f0d7";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:143 */
+.x-form-spinner-up-default {
+    background-position: 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:146 */
+.x-form-spinner-up-default.x-form-spinner-over {
+    background-position: -32px 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:148 */
+.x-form-spinner-up-default.x-form-spinner-over.x-form-spinner-focus {
+    background-position: -128px 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:153 */
+.x-form-spinner-up-default.x-form-spinner-focus {
+    background-position: -96px 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:158 */
+.x-form-spinner-up-default.x-form-spinner.x-form-spinner-click {
+    background-position: -64px 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:163 */
+.x-form-spinner-down-default {
+    background-position: 0 -15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:166 */
+.x-form-spinner-down-default.x-form-spinner-over {
+    background-position: -32px -15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:168 */
+.x-form-spinner-down-default.x-form-spinner-over.x-form-spinner-focus {
+    background-position: -128px -15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:173 */
+.x-form-spinner-down-default.x-form-spinner-focus {
+    background-position: -96px -15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/var/form/trigger/Spinner.scss:178 */
+.x-form-spinner-down-default.x-form-spinner.x-form-spinner-click {
+    background-position: -64px -15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:9 */
+.x-datepicker {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    background-color: #fff;
+    width: 310px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:19 */
+.x-datepicker-header {
+    padding: 0;
+    text-align: center;
+    background-color: #ececec;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:29 */
+.x-datepicker-arrow {
+    width: 32px;
+    height: 44px;
+    top: 0px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    color: #919191;
+    background-color: #ececec;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    opacity: 0.7;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:51 */
+div.x-datepicker-arrow:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:56 */
+.x-datepicker-next {
+    right: 0;
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-datepicker-next:before {
+    content: "\f101";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:65 */
+.x-datepicker-prev {
+    left: 0;
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-datepicker-prev:before {
+    content: "\f100";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:74 */
+.x-datepicker-month {
+    background: transparent;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:77 */
+.x-datepicker-month .x-btn,
+.x-datepicker-month .x-btn .x-btn-tc,
+.x-datepicker-month .x-btn .x-btn-tl,
+.x-datepicker-month .x-btn .x-btn-tr,
+.x-datepicker-month .x-btn .x-btn-mc,
+.x-datepicker-month .x-btn .x-btn-ml,
+.x-datepicker-month .x-btn .x-btn-mr,
+.x-datepicker-month .x-btn .x-btn-bc,
+.x-datepicker-month .x-btn .x-btn-bl,
+.x-datepicker-month .x-btn .x-btn-br {
+    background: transparent;
+    border-width: 0 !important;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:93 */
+.x-datepicker-month .x-btn-inner {
+    color: #404040;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:98 */
+.x-datepicker-month .x-btn-split-right:after,
+.x-datepicker-month .x-btn-over .x-btn-split-right:after {
+    content: "\f107";
+    font: 16px/1 FontAwesome;
+    color: #606060;
+    background: none;
+    padding: 0;
+    text-align: right;
+    width: 16px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:111 */
+.x-datepicker-month .x-btn {
+    padding: 14px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:115 */
+.x-datepicker-month .x-btn-over {
+    border-color: transparent;
+    background: #dfdfdf;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:120 */
+.x-datepicker-month .x-btn.x-btn-pressed {
+    border-color: transparent;
+    background: #d3d3d3;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:125 */
+.x-datepicker-month .x-btn-inner {
+    font-size: 15px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:130 */
+.x-datepicker-column-header {
+    width: 44px;
+    color: #404040;
+    font: 400 13px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    text-align: right;
+    background-color: #ececec;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:149 */
+.x-datepicker-column-header-inner {
+    line-height: 36px;
+    padding: 0 15px 0 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:154 */
+.x-datepicker-cell {
+    text-align: right;
+    border: 0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:163 */
+.x-datepicker-date {
+    padding: 0 15px 0 0;
+    font: 300 13px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #404040;
+    cursor: pointer;
+    line-height: 36px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:173 */
+div.x-datepicker-date:hover {
+    color: #404040;
+    background-color: #ececec;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:178 */
+.x-datepicker-selected {
+    border-style: solid;
+    border-color: #7fb5e4;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:181 */
+.x-datepicker-selected div.x-datepicker-date {
+    background-color: #5fa2dd;
+    color: #fff;
+    font-weight: 300;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:188 */
+.x-datepicker-today {
+    border-color: darkred;
+    border-style: solid;
+    background-color: #bfdaf1;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:199 */
+.x-datepicker-prevday .x-datepicker-date,
+.x-datepicker-nextday .x-datepicker-date {
+    color: #d0d0d0;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:206 */
+.x-datepicker-disabled .x-datepicker-date {
+    background-color: #eee;
+    cursor: default;
+    color: silver;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:214 */
+.x-datepicker-disabled div.x-datepicker-date:hover {
+    background-color: #eee;
+    color: silver;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:219 */
+.x-datepicker-footer,
+.x-monthpicker-buttons {
+    padding: 6px 0;
+    background-color: #fff;
+    text-align: center;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:236 */
+.x-datepicker-footer .x-btn,
+.x-monthpicker-buttons .x-btn {
+    margin: 0 3px 0 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:242 */
+.x-monthpicker {
+    width: 310px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:252 */
+.x-monthpicker-months {
+    border-width: 0 1px 0 0;
+    border-color: #d0d0d0;
+    border-style: solid;
+    width: 154px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:261 */
+.x-monthpicker-months .x-monthpicker-item {
+    width: 76px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:266 */
+.x-monthpicker-years {
+    width: 154px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:269 */
+.x-monthpicker-years .x-monthpicker-item {
+    width: 77px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:274 */
+.x-monthpicker-item {
+    margin: 5px 0 5px;
+    font: 300 13px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    text-align: center;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:280 */
+.x-monthpicker-item-inner {
+    margin: 0 5px 0 5px;
+    color: #404040;
+    border: 0;
+    line-height: 37px;
+    cursor: pointer;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:295 */
+a.x-monthpicker-item-inner:hover {
+    color: #404040;
+    background-color: #ececec;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:301 */
+.x-monthpicker-item a.x-monthpicker-selected {
+    background-color: #5fa2dd;
+    color: #fff;
+    border-style: solid;
+    border-color: #7fb5e4;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:308 */
+.x-monthpicker-yearnav {
+    height: 47px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:312 */
+.x-monthpicker-yearnav-button-ct {
+    width: 77px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:316 */
+.x-monthpicker-yearnav-button {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    opacity: 0.7;
+    -webkit-touch-callout: none;
+    color: #919191;
+    background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:337 */
+a.x-monthpicker-yearnav-button:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:342 */
+.x-monthpicker-yearnav-next {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-monthpicker-yearnav-next:before {
+    content: "\f101";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:356 */
+.x-monthpicker-yearnav-prev {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-monthpicker-yearnav-prev:before {
+    content: "\f100";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:371 */
+.x-monthpicker-small .x-monthpicker-item {
+    margin: 2px 0 2px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:375 */
+.x-monthpicker-small .x-monthpicker-item-inner {
+    margin: 0 5px 0 5px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:379 */
+.x-monthpicker-small .x-monthpicker-yearnav {
+    height: 41px;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/picker/Date.scss:383 */
+.x-monthpicker-small .x-monthpicker-yearnav-button {
+    margin-top: 12px;
+}
 /* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/tip/Tip.scss:180 */
 .x-tip-anchor {
     position: absolute;
@@ -11537,6 +11992,51 @@ body > .x-mask {
 /* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/menu/Menu.scss:700 */
 .x-ie8 .x-box-scroller-menu-default {
     background-color: #fff;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:1 */
+.x-grid-filters-filtered-column {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:7 */
+.x-grid-filters-icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #919191;
+    text-align: center;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:16 */
+.x-grid-filters-find .x-form-item-label-inner {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-grid-filters-find .x-form-item-label-inner:before {
+    content: "\f002";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:26 */
+.x-grid-filters-gt .x-form-item-label-inner {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-grid-filters-gt .x-form-item-label-inner:before {
+    content: "\f054";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:36 */
+.x-grid-filters-lt .x-form-item-label-inner {
+    font: 16px/1 FontAwesome;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-grid-filters-lt .x-form-item-label-inner:before {
+    content: "\f053";
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/filters/Filters.scss:46 */
+.x-grid-filters-eq .x-form-item-label-inner {
+    font: 16px/1 ExtJS;
+}
+/* C:/ContactsApp1/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:125 */
+.x-grid-filters-eq .x-form-item-label-inner:before {
+    content: "\e605";
 }
 /* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/grid/locking/Lockable.scss:1 */
 .x-grid-locked .x-grid-inner-locked {
@@ -14843,443 +15343,4 @@ body > .x-mask {
 .x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed.x-title-icon-bottom {
     height: 24px;
     padding-top: 8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:462 */
-.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed.x-title-icon-left {
-    width: 24px;
-    padding-right: 8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:474 */
-.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-icon-light-framed {
-    width: 16px;
-    height: 16px;
-    background-position: center center;
-}
-/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:480 */
-.x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-glyph {
-    color: #f0f0f0;
-    font-size: 16px;
-    line-height: 16px;
-}
-/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:497 */
-.x-ie8 .x-panel-header-title-light-framed > .x-title-icon-wrap-light-framed > .x-title-glyph {
-    color: #f0f0f0;
-}
-/* C:/ContactsApp1/ext/classic/theme-neutral/sass/src/panel/Panel.scss:507 */
-.x-panel-body-light-framed {
-    background: #fff;
-    border-color: #d0d0d0;
-    color: #404040;
-    font-size: 13px;
-    font-weight: 300;
-    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
-    border-width: 1px;
-    border-style: solid;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
-.x-panel-light-framed {
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 0 0 0 0;
-    border-width: 2px;
-    border-style: solid;
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
-.x-panel-light-framed-mc {
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-panel-light-framed {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
-.x-panel-light-framed-frameInfo {
-    font-family: dh-2-2-2-2-2-2-2-2-0px-0px-0px-0px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
-.x-panel-light-framed-tl {
-    background-position: 0 -4px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
-.x-panel-light-framed-tr {
-    background-position: right -6px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
-.x-panel-light-framed-bl {
-    background-position: 0 -8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
-.x-panel-light-framed-br {
-    background-position: right -10px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
-.x-panel-light-framed-ml {
-    background-position: 0 top;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
-.x-panel-light-framed-mr {
-    background-position: right top;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
-.x-panel-light-framed-tc {
-    background-position: 0 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
-.x-panel-light-framed-bc {
-    background-position: 0 -2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
-.x-panel-light-framed-tr,
-.x-panel-light-framed-br,
-.x-panel-light-framed-mr {
-    padding-right: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
-.x-panel-light-framed-tl,
-.x-panel-light-framed-bl,
-.x-panel-light-framed-ml {
-    padding-left: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
-.x-panel-light-framed-tc {
-    height: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
-.x-panel-light-framed-bc {
-    height: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
-.x-panel-light-framed-tl,
-.x-panel-light-framed-bl,
-.x-panel-light-framed-tr,
-.x-panel-light-framed-br,
-.x-panel-light-framed-tc,
-.x-panel-light-framed-bc,
-.x-panel-light-framed-ml,
-.x-panel-light-framed-mr {
-    background-image: url(images/panel/panel-light-framed-corners.gif);
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
-.x-panel-light-framed-ml,
-.x-panel-light-framed-mr {
-    background-image: url(images/panel/panel-light-framed-sides.gif);
-    background-repeat: repeat-y;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
-.x-panel-light-framed-mc {
-    padding: 0px 0px 0px 0px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
-.x-panel-header-light-framed-top {
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 10px 14px 10px 14px;
-    border-width: 2px 2px 0 2px;
-    border-style: solid;
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
-.x-panel-header-light-framed-top-mc {
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-panel-header-light-framed-top {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
-.x-panel-header-light-framed-top-frameInfo {
-    font-family: dh-2-2-0-2-2-2-0-2-10-14-10-14;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
-.x-panel-header-light-framed-top-tl {
-    background-position: 0 -4px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
-.x-panel-header-light-framed-top-tr {
-    background-position: right -6px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
-.x-panel-header-light-framed-top-bl {
-    background-position: 0 -8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
-.x-panel-header-light-framed-top-br {
-    background-position: right -10px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
-.x-panel-header-light-framed-top-ml {
-    background-position: 0 top;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
-.x-panel-header-light-framed-top-mr {
-    background-position: right top;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
-.x-panel-header-light-framed-top-tc {
-    background-position: 0 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
-.x-panel-header-light-framed-top-bc {
-    background-position: 0 -2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
-.x-panel-header-light-framed-top-tr,
-.x-panel-header-light-framed-top-br,
-.x-panel-header-light-framed-top-mr {
-    padding-right: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
-.x-panel-header-light-framed-top-tl,
-.x-panel-header-light-framed-top-bl,
-.x-panel-header-light-framed-top-ml {
-    padding-left: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
-.x-panel-header-light-framed-top-tc {
-    height: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
-.x-panel-header-light-framed-top-bc {
-    height: 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
-.x-panel-header-light-framed-top-tl,
-.x-panel-header-light-framed-top-bl,
-.x-panel-header-light-framed-top-tr,
-.x-panel-header-light-framed-top-br,
-.x-panel-header-light-framed-top-tc,
-.x-panel-header-light-framed-top-bc,
-.x-panel-header-light-framed-top-ml,
-.x-panel-header-light-framed-top-mr {
-    background-image: url(images/panel-header/panel-header-light-framed-top-corners.gif);
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
-.x-panel-header-light-framed-top-ml,
-.x-panel-header-light-framed-top-mr {
-    background-image: url(images/panel-header/panel-header-light-framed-top-sides.gif);
-    background-repeat: repeat-y;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
-.x-panel-header-light-framed-top-mc {
-    padding: 10px 14px 10px 14px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
-.x-panel-header-light-framed-right {
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 14px 10px 14px 10px;
-    border-width: 2px 2px 2px 0;
-    border-style: solid;
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
-.x-panel-header-light-framed-right-mc {
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-panel-header-light-framed-right {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
-.x-panel-header-light-framed-right-frameInfo {
-    font-family: dh-2-2-2-0-2-2-2-0-14-10-14-10;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
-.x-panel-header-light-framed-right-tl {
-    background-position: 0 -4px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
-.x-panel-header-light-framed-right-tr {
-    background-position: right -6px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
-.x-panel-header-light-framed-right-bl {
-    background-position: 0 -8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
-.x-panel-header-light-framed-right-br {
-    background-position: right -10px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
-.x-panel-header-light-framed-right-ml {
-    background-position: right 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
-.x-panel-header-light-framed-right-mr {
-    background-position: right 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
-.x-panel-header-light-framed-right-tc {
-    background-position: 0 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
-.x-panel-header-light-framed-right-bc {
-    background-position: 0 -2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
-.x-panel-header-light-framed-right-tr,
-.x-panel-header-light-framed-right-br,
-.x-panel-header-light-framed-right-mr {
-    padding-right: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
-.x-panel-header-light-framed-right-tl,
-.x-panel-header-light-framed-right-bl,
-.x-panel-header-light-framed-right-ml {
-    padding-left: 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
-.x-panel-header-light-framed-right-tc {
-    height: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
-.x-panel-header-light-framed-right-bc {
-    height: 2px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
-.x-panel-header-light-framed-right-tl,
-.x-panel-header-light-framed-right-bl,
-.x-panel-header-light-framed-right-tr,
-.x-panel-header-light-framed-right-br,
-.x-panel-header-light-framed-right-tc,
-.x-panel-header-light-framed-right-bc,
-.x-panel-header-light-framed-right-ml,
-.x-panel-header-light-framed-right-mr {
-    background-image: url(images/panel-header/panel-header-light-framed-right-corners.gif);
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
-.x-panel-header-light-framed-right-ml,
-.x-panel-header-light-framed-right-mr {
-    background-image: url(images/panel-header/panel-header-light-framed-right-sides.gif);
-    background-repeat: repeat-y;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
-.x-panel-header-light-framed-right-mc {
-    padding: 14px 10px 14px 10px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
-.x-panel-header-light-framed-bottom {
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 10px 14px 10px 14px;
-    border-width: 0 2px 2px 2px;
-    border-style: solid;
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
-.x-panel-header-light-framed-bottom-mc {
-    background-color: #fff;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-panel-header-light-framed-bottom {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
-.x-panel-header-light-framed-bottom-frameInfo {
-    font-family: dh-0-2-2-2-0-2-2-2-10-14-10-14;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
-.x-panel-header-light-framed-bottom-tl {
-    background-position: 0 -4px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
-.x-panel-header-light-framed-bottom-tr {
-    background-position: right -6px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
-.x-panel-header-light-framed-bottom-bl {
-    background-position: 0 -8px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
-.x-panel-header-light-framed-bottom-br {
-    background-position: right -10px;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
-.x-panel-header-light-framed-bottom-ml {
-    background-position: 0 bottom;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
-.x-panel-header-light-framed-bottom-mr {
-    background-position: right bottom;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
-.x-panel-header-light-framed-bottom-tc {
-    background-position: 0 0;
-}
-/* C:/ContactsApp1/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
-.x-panel-header-light-framed-bottom-bc {
-    background-position: 0 -2px;
 }

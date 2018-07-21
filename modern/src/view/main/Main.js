@@ -11,7 +11,7 @@ Ext.define('ContactsApp.view.main.Main', {
 
     requires: [
         'Ext.MessageBox',
-        'ContactsApp.view.contacts.List1',
+        'ContactsApp.view.contacts.ListMobile',
         'ContactsApp.view.contacts.ContactsController',
         'ContactsApp.view.contacts.ContactsModel'
     ],
